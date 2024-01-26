@@ -1,0 +1,66 @@
+/* Font import  */
+  @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800&display=swap');
+/* 
+font-family: 'Mulish', sans-serif;
+  */
+
+/* Typography  */
+:root{
+    --Dark-01:#131318;
+    --Dark-02: #424247;
+    --Dark-03:#5A5A5D;
+    --Dark-04:  rgba(19, 19, 24, 0.70);
+    --primary-color: #FF5400;
+    --White: #fff;
+}
+body{
+    font-family: 'Mulish', sans-serif;
+}
+
+/* Common Style  */
+
+.btn{
+    color: #FFF;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 800;
+    background-color: var(--primary-color);
+}
+
+
+ /* font-size and Color styling   */
+.txt-small{
+    font-size: 16px;
+}
+.txt-xl{
+    font-size: 32px;
+}
+.tx-md{
+    font-size: 40px;
+}
+
+.txt-lg{
+    font-size: 65px;
+}
+.dark-1{
+    color:var(--Dark-01);
+}
+.dark-2{
+    color:var(--Dark-02);
+}
+.dark-3{
+    color:var(--Dark-03);
+}
+.dark-4{
+    color:var(--primary-color);
+}
+.txt-white{
+    color:var(--White);
+}
+.primary-color{
+    color:var(--primary-color);
+}
+
+
+
+/* Main style start  */
