@@ -3,10 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/Group 40071 (2).png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/19acbcebf3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="asset/style.css">
     <title>G3 Architect </title>
 </head>
 <body>
-    
+    <header>
+        <nav class="primary-nav">
+            <div class="site-logo">
+                <h3 class="nav-logo"><img src="images/Group 40071 (2).png" alt="Travel logo"> Hero <span class="primary-color">Travel</span></h3>
+            </div>
+            <div class="primary-menu">
+                <ul>
+                    <li class="nav-item"><a href="http://127.0.0.1:5500/index.html">Home</a></li>
+                    <li class="nav-item"><a href="">Packages</a></li>
+                    <li class="nav-item"><a href="">Testimonial</a></li>
+                    <li class="nav-item"><a href="">Github Code</a></li>
+                    <li class="nav-item"><a href="https://wbdevelopers.com/contact/">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="hero">
+            <div class="hero-overlay">
+                    <div class="hero-container">
+                        <h1 class="hero-title">Explore Your Travel</h1>
+                        <p class="hero-description">Explore Your Travel is more than just a journey; it's an invitation to embark on a transformative experience that transcends boundaries and opens doors to new perspectives. It's about delving into the unknown, embracing different cultures, and creating lasting memories.</p>
+                        <div class="Query">
+                            <form action="" class="hero-form">
+                                <input type="text" placeholder="Where go">
+                                <input type="text" id="tourtime" placeholder="When  " >
+        
+                                                    <script>
+                                                    var dtt = document.getElementById('tourtime')
+                                                    dtt.onfocus = function (event) {
+                                                        this.type = 'datetime-local';
+                                                        this.focus();
+                                                    }
+                                                    </script>
+                                <!-- <select name="" id="">
+                                    <option value="Malvdives">Malvdive</option>
+                                    <option value="Indonesia">Indonesia</option>
+                                    <option value="Srilanka">Srilanka</option>
+                                    <option value="North_America">North america</option>
+                                    <option value="Kashmir">Kashmir</option>
+                                    <option value="Bangladesh">Bangladesh</option>
+                                    <option value="Bandarban">Bandarban</option>
+                                    <option value=""></option>
+                                </select> -->
+                                <select name="" id="" class="Class-type">
+                                    <option value="VIP">VIP</option>
+                                    <option value="Normal">Normal</option>
+                                    <option value="Family-Package">Family-Package</option>
+                                    <option value="" selected>Select Type</option>
+                                </select>
+                                <button class="btn-primary .txt-small"><i class="fa-solid fa-magnifying-glass"></i> Find Now</button>
+                            </form>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </header>
 </body>
 </html>
