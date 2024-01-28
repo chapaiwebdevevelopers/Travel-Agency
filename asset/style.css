@@ -415,9 +415,19 @@ footer h2 , footer img{
         display: block;
         top:40%;
     }
-    .discount-tag{
-        width:100px;
-        height:55px;
+    .discount-tag {
+        border-radius: 10px;
+        width: 200px;
+        height: 80px;
+        color: var(--White);
+        position: absolute;
+        transform: rotate(338deg);
+        right: 7px;
+        bottom: 37px;
+      
+    
     }
-
+    .discount-tag .web, .discount-tag .discount-upto {
+        font-size: 20px !important;
+    }
 }
