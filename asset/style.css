@@ -77,7 +77,8 @@ a {
     line-height: 26px;
 }
 main{
-    margin: 130px;
+    margin: 0px auto;
+    max-width: 1180px;
 }
 .section{
     margin: 100px auto;
@@ -263,6 +264,7 @@ max-width: 700px;
 #deal-card-3{
     background-image: url(../images/Group\ 39.png);
 }
+
 .deal-card{
     padding: 56px;
     border-radius: 16px;
@@ -275,9 +277,88 @@ max-width: 700px;
 }
 
 
+.place-video video{
+    border-radius: 16px;
+    width: 100%;
+}
+.subscribe{
+    display: flex;
+    gap: 24px;
+}
+.newsletter{
+    border: 1px solid var(--primary-color);
+    border-radius: 16px;
+    padding: 40px;
+}
+.newsletter h3 {
+ font-size: 24px;
+}
+.newsletter input{
+    padding: 20px;
+    margin-bottom: 20px;
+    border:0px;
+    border-radius: 8px;
+    background: rgba(19, 19, 24, 0.05);
+}
+.subscribe-form{
+    display: flex;
+    flex-direction: column;
+}
+.newsletter-img{
+    position: relative;
+
+}
+.newsletter-img img{
+
+}
+.discount-tag{
+    text-align: center;
+    background-color: var(--primary-color);
+    /* padding:10px; */
+    border-radius: 16px;
+    width:324px;
+    height:128px;
+    color: var(--White);
+    position: absolute;
+    transform: rotate(-30deg);
+    right: 10px;
+    bottom:70px;
+}
+.discount-tag .web{
+    font-size: 24px;
+}
+.discount-tag .discount-upto{
+    font-size: 32px;
+}
 
 
+footer{
+    padding: 110px 0px;
+    background: rgba(19, 19, 24, 0.05);
 
+}
+.footer-container{
+    max-width: 768px;
+    margin: 0 auto;
+    text-align: center;
+}
+.footer-container ul {
+    list-style: none;
+
+}
+.social-links ul {
+    /* text-align: center; */
+    display: flex;
+    gap: 24px;
+    font-size:1.5rem;
+    justify-content: center;
+    
+}
+
+footer h2 , footer img{
+    font-size: 32px;
+    align-items: center;
+}
 
 
 
@@ -320,10 +401,10 @@ max-width: 700px;
     .hero-form input , .hero-form .class-type ,.btn-primary{
         width:255px;
     }
-    .flex, .row, .card-container{
+    .flex, .row, .card-container,.subscribe{
         flex-direction: column;
     }
-    .popular-img img, .section-center{
+    .popular-img img, .section-center, .place img , .newsletter-img img, .place-content, .place-video video{
         width:100%;
     }
     .destination-item img {
@@ -334,6 +415,9 @@ max-width: 700px;
         display: block;
         top:40%;
     }
-    
+    .discount-tag{
+        width:100px;
+        height:55px;
+    }
 
 }
