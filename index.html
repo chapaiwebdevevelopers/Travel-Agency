@@ -6,52 +6,37 @@
     <link rel="shortcut icon" href="images/Group 40071 (2).png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/19acbcebf3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="asset/style.css">
-    <title>G3 Architect </title>
+    <title>Hero Travel </title>
 </head>
 <body>
     <header>
         <nav class="primary-nav">
             <div class="site-logo">
-                <h3 class="nav-logo"><img src="images/Group 40071 (2).png" alt="Travel logo"> Hero <span class="primary-color">Travel</span></h3>
+                <h2 class="nav-logo"><img src="images/Group 40071 (2).png" alt="Travel logo"> Hero <span class="primary-color">Travel</span></h2>
             </div>
             <div class="primary-menu">
-                <ul>
+                <ul class="hide-sm">
                     <li class="nav-item"><a href="http://127.0.0.1:5500/index.html">Home</a></li>
                     <li class="nav-item"><a href="">Packages</a></li>
                     <li class="nav-item"><a href="">Testimonial</a></li>
                     <li class="nav-item"><a href="">Github Code</a></li>
                     <li class="nav-item"><a href="https://wbdevelopers.com/contact/">Contact</a></li>
                 </ul>
+                <div class="toggle hide-lg">
+                    <a href=""><i class="fa-solid fa-bars"></i></a>
+                </div>
             </div>
         </nav>
         <div class="hero">
             <div class="hero-overlay">
                     <div class="hero-container">
                         <h1 class="hero-title">Explore Your Travel</h1>
-                        <p class="hero-description">Explore Your Travel is more than just a journey; it's an invitation to embark on a transformative experience that transcends boundaries and opens doors to new perspectives. It's about delving into the unknown, embracing different cultures, and creating lasting memories.</p>
+                        <p class="description txt-white">Explore Your Travel is more than just a journey; it's an invitation to embark on a transformative experience that transcends boundaries and opens doors to new perspectives. It's about delving into the unknown, embracing different cultures, and creating lasting memories.</p>
                         <div class="Query">
                             <form action="" class="hero-form">
                                 <input type="text" placeholder="Where go">
                                 <input type="text" id="tourtime" placeholder="When  " >
-        
-                                                    <script>
-                                                    var dtt = document.getElementById('tourtime')
-                                                    dtt.onfocus = function (event) {
-                                                        this.type = 'datetime-local';
-                                                        this.focus();
-                                                    }
-                                                    </script>
-                                <!-- <select name="" id="">
-                                    <option value="Malvdives">Malvdive</option>
-                                    <option value="Indonesia">Indonesia</option>
-                                    <option value="Srilanka">Srilanka</option>
-                                    <option value="North_America">North america</option>
-                                    <option value="Kashmir">Kashmir</option>
-                                    <option value="Bangladesh">Bangladesh</option>
-                                    <option value="Bandarban">Bandarban</option>
-                                    <option value=""></option>
-                                </select> -->
-                                <select name="" id="" class="Class-type">
+                                <select name="" id="" class="class-type">
                                     <option value="VIP">VIP</option>
                                     <option value="Normal">Normal</option>
                                     <option value="Family-Package">Family-Package</option>
@@ -64,5 +49,204 @@
             </div>
         </div>
     </header>
+
+
+    <main>
+        <!-- Popular Section  -->
+        <div class="popular flex section">
+            <div class="popular-content">
+                <h2 class="title"> Our Popular Tours</h2>
+                <p class="description">Discover the rich culture and lush landscapes of Bangladesh, where vibrant markets, historical wonders, and the Sundarbans' mystical beauty await exploration.</p>
+                <ul class="popular-point">
+                    <li>Bangladesh's vibrant culture unfolds in a kaleidoscope of colors, echoing through bustling markets, lively festivals, and traditional celebrations. The warmth of its people and the richness of customs create a tapestry of cultural diversity, making every moment an immersive experience into the heart of this South Asian gem.</li>
+                    <li>In Bangladesh, the pulse of vibrant culture beats in the rhythm of daily life. From the intricate artistry of traditional crafts to the lively sounds of music and dance, the nation's cultural tapestry reflects the resilience, diversity, and spirit of its people.</li>
+                    <li>Dive into Bangladesh's cultural mosaic, where flavorsome cuisine, intricate textiles, and hospitable traditions converge. The fusion of history and modernity weaves a narrative that resonates through the vibrant streets, creating an immersive experience in this captivating tapestry of South Asian heritage.</li>
+                </ul>
+                <p class="description">Bangladesh beckons with its vibrant culture, boasting colorful markets and festivities. Its rich history unfolds through awe-inspiring historical wonders, offering a glimpse into the nation's storied past. The enchanting beauty of the Sundarbans, the world's largest mangrove forest, adds a touch of mystique.</p>
+                <button class="btn-primary">Read More</button>
+            </div>
+            <div class="popular-img">
+                <img src="images/avarest.png" alt="">
+            </div>
+            
+        </div>
+
+        <!-- Destination section start  -->
+        <div class="destination section">
+            <div class="destination-content">
+                <h1 class="title">Choose Your Destination</h1>
+            <p class="description section-center">Select your dream tour destination and embark on an unforgettable journey of exploration and discovery.</p>
+            </div>
+            <div class="destination-img-container">
+                <div class="row">
+                    <div class="destination-item">
+                        <img src="images/maldives.png" alt="">
+                        <p>Maldives</p>
+                    </div>
+                    <div class="destination-item">
+                        <img src="images/indonesia.png" alt="">
+                        <p>indonesia</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="destination-item">
+                        <img src="images/srilanka spot.png" alt="">
+                        <p>Srilanka</p>
+                    </div>
+                    <div class="destination-item">
+                        <img src="images/North America.png" alt="">
+                        <p>North America</p>
+                    </div>
+                    <div class="destination-item">
+                        <img src="images/kashmir.png" alt="">
+                        <p>Kashmir</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="destination-item">
+                        <img src="images/Bangladesh.png" alt="">
+                        <p>Bangladesh</p>
+                    </div>
+                    <div class="destination-item">
+                        <img src="images/bandarban.png" alt="">
+                        <p>Bandarban</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Why choose us section start  -->
+        <div class="choose section">
+            <div class="choose-content txt-center">
+                <h2 class="title">Why Choose Us</h2>
+                <p class="description section-center">Embark on unforgettable journeys, explore new horizons, and create lasting memories with our curated and exciting tour travel packages.</p>
+            </div>
+            <div class="card-container ">
+                <div class="card" id="card-1">
+                    <div class="card-png"><i class="fa-solid fa-building fa-3x"></i></div>                   
+                    <h2 class="subtitle">Handpicked Hotels</h2>
+                    <p class="description">Handpicked Hotels offers an exclusive collection of premium accommodations, meticulously chosen for their distinctive charm, exceptional service, and unique experiences. </p>
+                </div>
+                <div class="card-container">
+                    
+                </div>
+                <div class="card "id="card-2">
+                    <div class="card-png"><i class="fa-solid fa-map fa-3x"></i></div> 
+                    <h2 class="subtitle">World Class Service</h2>
+                    <p class="description">Indulge in a journey of unparalleled luxury with our tour travel's world-class service. Our dedicated team ensures every detail exceeds expectations, providing seamless experiences and personalized attention</p>
+                </div>
+
+            </div>
+            <div class="card" id="card-3">
+                <div class="card-png"><i class="fa-solid fa-tag fa-3x"></i></div> 
+                <h2 class="subtitle">Best Price Guarantee</h2>
+                <p class="description">
+                    Enjoy peace of mind with our tour travel's Best Price Guarantee. We promise unbeatable value, assuring you the most competitive rates for your adventures. Trust us to provide exceptional experiences at the best prices</p>
+            </div>
+        </div>
+
+        <!-- Deals Section start  -->
+        <div class="deals section">
+            <div class="deals-content txt-center">
+                <h2 class="title">Deals & Discounts</h2>
+                <p class="description section-center">Unlock incredible savings with our travel agency's exclusive deals and discounts. From flight packages to accommodation, seize the opportunity to explore the world without breaking the bank</p>
+            </div>
+            <div class="deals-card">
+                <div id="deal-card-1" class="flex">
+                    <div class="deal-card">
+                        <div class="card-point">
+                            <ul>
+                                <li class="time"><i class="fa-solid fa-clock"></i>7 Day / 6 Night</li>
+                                <li class="person"><i class="fa-solid fa-users"></i> Max : 10</li>
+                                <li class="location"> <i class="fa-solid fa-location-dot"></i> Malaysia</li>
+                            </ul>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="subtitle">Tour To Satorini</h3>
+                            <p class="description">Amet consectetur. Vulputate commodo felis 
+                                molestie risus  ornare nulla amet et. Libero commodo sagittis dignissim adipiscing quis. Habitant adipiscing.</p>
+                            <p class="deal-price">Price: $1300-$1500</p>
+                            <button class="btn-primary">Book Now</button>
+                        </div>
+                    </div>
+                    <div></div>
+                </div>
+                
+                <div id="deal-card-2" class="flex">
+                    <div></div>
+                    <div class="deal-card">
+                        <div class="card-point">
+                            <ul>
+                                <li class="time"><i class="fa-solid fa-clock"></i>7 Day / 6 Night</li>
+                                <li class="person"><i class="fa-solid fa-users"></i> Max : 10</li>
+                                <li class="location"> <i class="fa-solid fa-location-dot"></i> Malaysia</li>
+                            </ul>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="subtitle">Tour To Satorini</h3>
+                            <p class="description">Amet consectetur. Vulputate commodo felis 
+                                molestie risus  ornare nulla amet et. Libero commodo sagittis dignissim adipiscing quis. Habitant adipiscing.</p>
+                            <p class="deal-price">Price: $1300-$1500</p>
+                            <button class="btn-primary">Book Now</button>
+                        </div>
+                    </div>
+                   
+                </div>
+                <div id="deal-card-3" class="flex">
+                    <div class="deal-card">
+                        <div class="card-point">
+                            <ul>
+                                <li class="time"><i class="fa-solid fa-clock"></i>7 Day / 6 Night</li>
+                                <li class="person"><i class="fa-solid fa-users"></i> Max : 10</li>
+                                <li class="location"> <i class="fa-solid fa-location-dot"></i> Malaysia</li>
+                            </ul>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="subtitle">Tour To Satorini</h3>
+                            <p class="description">Amet consectetur. Vulputate commodo felis 
+                                molestie risus  ornare nulla amet et. Libero commodo sagittis dignissim adipiscing quis. Habitant adipiscing.</p>
+                            <p class="deal-price">Price: $1300-$1500</p>
+                            <button class="btn-primary">Book Now</button>
+                        </div>
+                    </div>
+                    <div></div>
+                </div>
+                
+
+
+            </div>
+        </div>
+
+
+
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        var dtt = document.getElementById('tourtime')
+        dtt.onfocus = function (event) {
+            this.type = 'datetime-local';
+            this.focus();
+        }
+        </script>
 </body>
 </html>

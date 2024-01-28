@@ -16,9 +16,7 @@ font-family: 'Mulish', sans-serif;
 body{
     font-family: 'Mulish', sans-serif;
 }
-ul{
-    list-style: none;
-}
+
 a {
     text-decoration: none;
 }
@@ -36,21 +34,19 @@ a {
     padding: 16px 35px;
 }
 
-
- /* font-size and Color styling  */
-.txt-small{
-    font-size: 16px;
-}
-.txt-xl{
-    font-size: 32px;
-}
-.tx-md{
-    font-size: 40px;
+.txt-center{
+    text-align: center;
 }
 
-.txt-lg{
-    font-size: 65px;
+ /* font-size and Color styling   title> 40_20   subtitle > 24-20  price > 20-16    description > 16-14   card text 28-20   */
+.flex{
+    display: flex;
+    gap: 53px;
 }
+.border-radius{
+    border-radius: 1rem;
+}
+
 .dark-1{
     color:var(--Dark-01);
 }
@@ -63,6 +59,30 @@ a {
 .dark-4{
     color:var(--primary-color);
 }
+
+.title{
+    color: var(--Dark-01);
+    font-size: 40px;
+    font-weight: 800;   
+}
+.subtitle{
+    color:var(--Dark-01);
+    font-size: 24px;
+    font-weight: 800;
+}
+.description{
+    color:var(--Dark-03);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+main{
+    margin: 130px;
+}
+.section{
+    margin: 100px auto;
+}
+
 .txt-white{
     color:var(--White);
 }
@@ -72,17 +92,21 @@ a {
 .hide{
     display: none;
 }
-
+.hide-lg{
+    display: none;
+}
 
 /************************ Main style start  *************************/
 
 
 /* header style start  */
 .site-logo{
-    align-items: center;
+    color: #131318;
+    font-size: 36px;
+    font-weight: 800;
 }
 header{
-    margin: 52px 135px;
+    margin: 0px 135px;
 }
 
 header .primary-nav {
@@ -91,6 +115,7 @@ header .primary-nav {
     justify-content: space-between;
 }
 .primary-menu ul {
+    list-style-type: none;
     display: flex;
     justify-content: space-between;
 
@@ -122,7 +147,7 @@ header .primary-nav {
     color:var(--White);
     margin-bottom: 24px;
 }
-.hero-description{
+.hero .description{
     margin-bottom: 48px;
 }
 .hero-container{
@@ -138,17 +163,116 @@ header .primary-nav {
     border: 0px;
     border-radius: 8px;
     padding: 1rem;
-    margin: 0px 12px;
+    margin: 12px;
     color: rgba(19, 19, 24, 0.50);
     font-weight: 400;
+    
 }
 
+/* Popular Section style  */
+.popular-point li {
+    color:var(--Dark-04);
+    margin: 10px 0px;
+}
+
+/* Destination section  */
+.destination-img-container{
+    max-width: 1200px;
+    margin: 50px auto;
+}
+
+.destination-content{
+    text-align: center;
+    /* position: relative; */
+}
+.row{
+    display: flex;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+.destination-item {
+    position: relative;
+}
+.destination-item p{
+    display: none;
+    position:absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:var(--White);
+    font-size: 28px;
+
+}
+.destination-item:hover p{
+    display: block;
+}
+
+/* Why choose section style  */
+
+.card-container{
+display:flex;
+gap: 24px;
+position: relative;
+margin-top: 48px;
+}
+.card{
+    padding:32px;
+    border-radius: 16px;
+}
+#card-1{
+    background: rgba(251, 181, 99, 0.05);
+    border: 1px solid rgba(251, 181, 99, 0.20);
+}
+#card-2{
+    
+border: 1px solid rgba(41, 206, 246, 0.20);
+background: rgba(41, 206, 246, 0.05);
+}
+#card-3{
+border: 1px solid rgba(233, 68, 68, 0.20);
+background: rgba(233, 68, 68, 0.05);
+margin:24px auto;
+max-width: 700px;
+
+}
+.section-center {
+    width:50%;
+    margin: 0px auto;
+}
+.deals-card{
+  
+}
+.deals-card  div{
+    margin: 50px;
+}
+#deal-card-1,#deal-card-2,#deal-card-3{
+    display: flex;
+    flex:1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+}
+#deal-card-1{
+    background-image: url(../images/Group\ 39.png);
 
 
+}
+#deal-card-2{
+    background-image: url(../images/Group\ 40.png);
+}
+#deal-card-3{
+    background-image: url(../images/Group\ 39.png);
+}
+.deal-card{
+    padding: 56px;
+    border-radius: 16px;
+    border: 2px solid #FFF;
+    background: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(2.5px);
+    width: 550px;
+    height: 380px;
 
-
-
-
+}
 
 
 
@@ -161,9 +285,55 @@ header .primary-nav {
 
 /* Responsive Design for mobile device (Width: 576px) */
 @media screen and (max-width:576px) {
-    .primary-nav, .primary-menu ul{
-        display: flex;
-        flex-direction: column;
+    main{
+        margin: 0px 20px;
+    }
+
+    .title, .subtitle ,.site-logo, .destination-item p {
+        font-size: 20px;
+    }
+    .description{
+        font-size: 14px;
     }
     
+    .primary-nav{
+        justify-content: space-evenly;
+    }
+    .hide-sm{
+        display: none;
+    }
+    .hide-lg {
+        display: block;
+    }
+    .primary-menu ul{
+        display: none;
+    }
+    header{
+        margin: 0px 15px;
+    }
+    .hero-container{
+        padding: 32px 16px;
+    }
+    .hero-title{
+        font-size: 22px;
+    }
+    .hero-form input , .hero-form .class-type ,.btn-primary{
+        width:255px;
+    }
+    .flex, .row, .card-container{
+        flex-direction: column;
+    }
+    .popular-img img, .section-center{
+        width:100%;
+    }
+    .destination-item img {
+        width:100%;
+        height: 200px;
+    }
+    .destination-item p {
+        display: block;
+        top:40%;
+    }
+    
+
 }
